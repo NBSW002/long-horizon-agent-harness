@@ -138,6 +138,7 @@ celerybeat.pid
 .env
 .envrc
 .venv
+.venv.broken*/
 env/
 venv/
 ENV/
@@ -236,6 +237,9 @@ pytest-cache-files-*/
 
 # Generated experiment reports
 artifacts/
+
+# Local uv package and Python cache
+.uv-cache/
 
 # Large local datasets and reference papers are not required by the runtime.
 data/
