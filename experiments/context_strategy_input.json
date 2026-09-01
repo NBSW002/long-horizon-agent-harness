@@ -1,0 +1,47 @@
+{
+  "max_chars": 150,
+  "required_markers": [
+    "parser.py",
+    "API_MARKER",
+    "final verification"
+  ],
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are a coding agent."
+    },
+    {
+      "role": "user",
+      "content": "The long-term goal is to fix parser.py and preserve the API_MARKER."
+    },
+    {
+      "role": "assistant",
+      "content": "I inspected parser.py and found the relevant function."
+    },
+    {
+      "role": "user",
+      "content": "Continue with the final verification step."
+    }
+  ],
+  "folded_memory": {
+    "episode_memory": {
+      "task_description": "Fix parser.py and preserve API_MARKER",
+      "key_events": [],
+      "current_progress": "The relevant function was found."
+    },
+    "working_memory": {
+      "immediate_goal": "Run final verification",
+      "current_challenges": "",
+      "next_actions": [
+        {
+          "type": "planning",
+          "description": "Run the parser tests"
+        }
+      ]
+    },
+    "tool_memory": {
+      "tools_used": [],
+      "derived_rules": []
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "skill": {
+    "name": "source-aware",
+    "description": "Answer factual questions with sources.",
+    "instructions": "Always cite sources for factual claims."
+  },
+  "samples": [
+    {
+      "time": "2026-08-31T00:00:00Z",
+      "action": "invoke",
+      "messages": [
+        {"role": "user", "content": "What changed?"},
+        {"role": "assistant", "content": "Sources: https://example.com\nThe API changed."}
+      ]
+    },
+    {
+      "time": "2026-08-31T00:01:00Z",
+      "action": "invoke",
+      "messages": [
+        {"role": "user", "content": "Why did it change?"},
+        {"role": "assistant", "content": "It changed for compatibility."}
+      ]
+    }
+  ]
+}
